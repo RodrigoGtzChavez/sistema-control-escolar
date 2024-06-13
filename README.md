@@ -1,2 +1,4 @@
-# sistema-control-escolar
-Sistema Control Escolar
+# Sistema de Control Escolar
+
+autor: Rodrigo Gutiérrez Chávez @rodrigogtzchavez
+
