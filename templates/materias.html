@@ -1,0 +1,23 @@
+<h1>Materias</h1>
+<a href="/">Inicio</a>
+<table>
+    <thead>
+        <tr>
+            <th>Clave</th>
+            <th>Asignatura</th>
+            <th>Cuatrimestre</th>
+            <th>Promedio</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for materia in materias %}
+        <tr>
+            <td>{{materia["clave"]}}</td>
+            <td>{{materia["asignatura"]}}</td>
+            <td>{{materia["cuatrimestre"]}}</td>
+            <td>{{materia["promedio"]}}</td>
+        </tr>
+        {% endfor %}
+        
+    </tbody>
+</table>

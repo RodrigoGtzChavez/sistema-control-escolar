@@ -19,8 +19,19 @@ def estudiantes():
          {"matricula": "230704", "nombre": "Isabel", "apellido_paterno": "López",
          "apellido_materno": "Acero"}
     ] 
-
     return render_template('estudiantes.html', data=data)
+
+@app.route('/materias')
+def materias():
+    materias = [
+        {"clave": "701", "asignatura": "Analisis y Diseño de Algoritmos", "cuatrimestre": "Primero",
+         "promedio": "10"},
+         {"clave": "702", "asignatura": "UX", "cuatrimestre": "Primero",
+         "promedio": "9.8"},
+         {"clave": "703", "asignatura": "Tecnologia, Sociedad y Futuros Posibles", "cuatrimestre": "Primero",
+         "promedio": "8"},        
+    ] 
+    return render_template('materias.html', materias=materias)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8888, debug=True)
